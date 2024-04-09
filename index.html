@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Youtube.com</title>
     <link rel="stylesheet" href="styles/general.css">
     <link rel="stylesheet" href="styles/video-preview.css">
     <link rel="stylesheet" href="styles/header.css">
@@ -29,28 +29,35 @@
       </div>
       <div class="middle-section">
         <input type="text" class="search-bar" placeholder="Search">
-        <button class="search-button" title="Search">
+        <button class="search-button">
           <img src="assets/logos/search-button.svg" alt="">
+          <div class="tooltip">Search</div>
         </button>
-        <button class="voice-search-button" title="Voice Search">
+        <button class="voice-search-button">
           <img src="assets/logos/voice-search-icon.svg" alt="" class="voice-search-icon">
+          <div class="tooltip">Search with your voice</div>
         </button>
       </div>
       <div class="right-section">
-        <button title="Upload" class="upload-button">
+        <button class="upload-button">
           <img src="assets/logos/upload.svg" alt="" class="menu-icon">
+          <div class="tooltip">Create</div>
         </button>
 
-        <button title="Notifications" class="notification-button">
+        <button class="notification-button">
           <img src="assets/logos/notifications.svg" alt="" class="menu-icon">
+          <div class="tooltip">Notifications</div>
           <div class="not-number">4</div>
         </button>
         
-        <img src="assets/profile-pictures/myprofile.jpg" alt="" class="my-profile-pic">
-       
+        <div class="profile-pic-button">
+          <img src="assets/profile-pictures/myprofile.jpg" alt="" class="my-profile-pic">
+          <div class="tooltip">My Profile</div>
+        </div>
       </div>
     </div>
     <div class="body-section">
+            
       <div class="side-panel">
         <div class="side-bar-option current-option">
           <img src="assets/logos/home.svg" alt="" class="side-bar-icon">
@@ -63,6 +70,10 @@
         <div class="side-bar-option">
           <img src="assets/logos/subs.svg" alt="" class="side-bar-icon ">
           <p class="side-bar-text">Subscriptions</p>
+        </div>
+        <div class="side-bar-option you-icon">
+          <img src="assets/logos/you-icon.svg" alt="" class="side-bar-icon ">
+          <p class="side-bar-text">You</p>
         </div>
 
         <div class="you-section">
@@ -80,20 +91,21 @@
             <img src="assets/logos/history.svg" alt="" class="side-bar-icon ">
             <p class="side-bar-text">History</p>
           </div>
-        </div>
-        <div class="side-bar-option">
-          <img src="assets/logos/your-videos.svg" alt="" class="side-bar-icon ">
-          <p class="side-bar-text">Your videos</p>
-        </div>
-        <div class="side-bar-option">
-          <img src="assets/logos/watch-later.svg" alt="" class="side-bar-icon ">
-          <p class="side-bar-text">Watch later</p>
-        </div>
-        <div class="side-bar-option">
-          <img src="assets/logos/liked-videos.svg" alt="" class="side-bar-icon ">
-          <p class="side-bar-text">Liked videos</p>
+          <div class="side-bar-option">
+            <img src="assets/logos/your-videos.svg" alt="" class="side-bar-icon ">
+            <p class="side-bar-text">Your videos</p>
+          </div>
+          <div class="side-bar-option">
+            <img src="assets/logos/watch-later.svg" alt="" class="side-bar-icon ">
+            <p class="side-bar-text">Watch later</p>
+          </div>
+          <div class="side-bar-option">
+            <img src="assets/logos/liked-videos.svg" alt="" class="side-bar-icon ">
+            <p class="side-bar-text">Liked videos</p>
+          </div>
         </div>
       </div>
+      <!-- End of Side Bar -->
 
       <div class="main-body-section">
 

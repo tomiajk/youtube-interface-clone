@@ -67,26 +67,31 @@
   height: 37px;
   border: 1px solid rgb(182, 182, 182);
   border-radius: 25px;
-  box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.05);
-  width: 0px;
+  box-shadow: inset 0.5px 0.5px 3px rgba(0, 0, 0, 0.05);
+  width: 10px;
+  font-size: 16px;
+  padding-left: 16px;
+  font-family: Roboto, Arial;
 }
 
 .search-bar::placeholder {
   font-family: Roboto, Arial;
-  font-size: 18px;
-  padding-left: 16px;
-  font-weight: 500;
+  font-size: 16px;
+  color: rgb(174, 172, 170);
 }
 
 
 
 .search-button {
-  width: 70px;
+  width: 60px;
   height: 41px;
-  border: 1px solid rgb(182, 182, 182);
+  border: 1px solid rgb(167, 159, 159);
+  background-color: rgb(246, 246, 246);
   border-top-right-radius: 21px;
   border-bottom-right-radius: 21px;
   margin-left: -35px;
+  position: relative;
+  cursor: pointer;
 }
 
 .voice-search-button {
@@ -98,12 +103,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: rgb(246, 246, 246);
+  position: relative;
+  cursor: pointer;
 }
 
 .voice-search-icon {
   width: 26px;
 }
-
 
 .notification-button,
 .upload-button {
@@ -124,6 +131,7 @@
 
 .notification-button {
   position: relative;
+  cursor: pointer;
 }
 
 .not-number {
@@ -148,19 +156,91 @@
 
 }
 
+.profile-pic-button {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  font-size: 12px;
+  font-family: Roboto, Arial;
+}
 
 .my-profile-pic {
   width: 35px;
   border-radius: 50%;
+  cursor: pointer;
 }
 
 .menu-icon {
-  width: 28px;
+  width: 24px;
 }
 
 .upload-button {
   margin-right: 15px;
+  position: relative;
+  cursor: pointer;
 }
 .notification-button {
   margin-right: 20px;
+  position: relative;
+  cursor: pointer;
+}
+
+.search-button .tooltip,
+.voice-search-button .tooltip,
+.upload-button .tooltip,
+.notification-button .tooltip,
+.profile-pic-button .tooltip {
+  position: absolute;
+  background-color: rgb(105, 104, 104);
+  color: white;
+  padding: 5px 9px;
+  bottom: -35px;
+  z-index: 100;
+  opacity: 0;
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+.search-button:hover .tooltip,
+.voice-search-button:hover .tooltip,
+.upload-button:hover .tooltip,
+.notification-button:hover .tooltip,
+.profile-pic-button:hover .tooltip {
+  opacity: 1;
+}
+
+.voice-search-button:hover {
+  opacity: 1;
+}
+
+@media (max-width: 650px) {
+  .middle-section {
+    justify-content: flex-end;
+  }
+  .search-bar{
+    display: none;
+  }
+  .search-button {
+    border: none;
+    background-color: white;
+    border-radius: 0px;
+    margin-right: -12px;
+    padding-top: 4px;
+  }
+  .voice-search-button {
+    background-color: white;
+    margin-left: 0px;
+  }
+
+  .right-section {
+    margin-right: 20px;
+    width: 120px;
+  }
+  .upload-button {
+    margin-right: 0px;
+  }
+
+  .notification-button {
+    margin-right: 10px;
+  }
 }

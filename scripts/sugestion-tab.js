@@ -1,4 +1,4 @@
-const suggestions = ['All', 'Chess', 'Gaming', 'Football', 'Computer programming', 'Avatar: The Last Airbender', 'Animated films', 'Comdey', 'Avatar'];
+const suggestions = ['All', 'Chess', 'Gaming', 'Football', 'Computer programming', 'Avatar: The Last Airbender', 'Animated films', 'Comdey', 'Avatar', 'Music'];
 
 let allSuggestionsTab = '';
 suggestions.forEach((element) => {
