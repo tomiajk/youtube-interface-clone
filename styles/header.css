@@ -1,0 +1,166 @@
+.header {
+  background-color: white;
+  height: 55px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  z-index: 100;
+}
+
+.right-section {
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  margin-right: 40px;
+  flex-shrink: 0;
+}
+
+.menu-button {
+  width: 40px;
+  height: 40px;
+  padding: 8px;
+  border: none;
+  background-color: white;
+  margin-left: 20px;
+}
+
+.youtube-logo-button {
+  height: 100%;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  padding-left: 16px;
+  padding-right: 14px;
+  border: none;
+  background-color: white;
+}
+
+
+/* The left Section of the Header */
+.left-section {
+  width: 150px;
+  display: flex;
+  align-items: center;
+}
+
+.youtube-logo {
+  width: 100px;
+  margin-left: 10px;
+}
+
+/* The Middle Section */
+.middle-section {
+  margin-left: 100px;
+  display: flex;
+  flex: 1;
+  max-width: 700px;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-bar {
+  flex: 1;
+  height: 37px;
+  border: 1px solid rgb(182, 182, 182);
+  border-radius: 25px;
+  box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.05);
+  width: 0px;
+}
+
+.search-bar::placeholder {
+  font-family: Roboto, Arial;
+  font-size: 18px;
+  padding-left: 16px;
+  font-weight: 500;
+}
+
+
+
+.search-button {
+  width: 70px;
+  height: 41px;
+  border: 1px solid rgb(182, 182, 182);
+  border-top-right-radius: 21px;
+  border-bottom-right-radius: 21px;
+  margin-left: -35px;
+}
+
+.voice-search-button {
+  width: 40px;
+  height: 40px;
+  margin-left: 15px;
+  border-radius: 20px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.voice-search-icon {
+  width: 26px;
+}
+
+
+.notification-button,
+.upload-button {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: white;
+}
+
+.notification-button:hover,
+.upload-button:hover {
+  background-color: rgb(224, 224, 224);
+}
+
+.notification-button {
+  position: relative;
+}
+
+.not-number {
+  position: absolute;
+  top: 4px;
+  right: 5px;
+
+  background-color: rgb(203, 3, 3);
+  font-size: 12px;
+  font-weight: 500;
+  font-family: Arial;
+  color: white;
+  border-radius: 50%;
+  height: 10px;
+  width: 10px;
+  text-align: center;
+  padding: 4px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+.my-profile-pic {
+  width: 35px;
+  border-radius: 50%;
+}
+
+.menu-icon {
+  width: 28px;
+}
+
+.upload-button {
+  margin-right: 15px;
+}
+.notification-button {
+  margin-right: 20px;
+}

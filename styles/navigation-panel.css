@@ -1,0 +1,60 @@
+.side-panel {
+  width: 200px;
+  height: 100%;
+  padding: 16px;
+
+  position: fixed;
+  left: 0;
+  top: 55px;
+
+  background-color: white;
+}
+
+.side-bar-option {
+  display: grid;
+  grid-template-columns: 40px 100px;
+  height: 48px;
+  background-color: white;
+  width: 180px;
+  border-radius: 10px;
+  padding: 0 12px;
+}
+
+.side-bar-option:hover,
+.current-option {
+  background-color: rgb(233, 231, 231);
+  cursor: pointer;
+}
+
+.side-bar-icon {
+  width: 24px;
+  padding-top: 11px;
+}
+
+.side-bar-text {
+  padding-top: 13px;
+  font-size: 16px;
+  font-family: Roboto, Arial;
+}
+
+
+.you-section {
+  border-top: 2px solid rgb(233, 231, 231);
+  margin-top: 12px;
+  padding-top: 12px
+}
+
+.you-text {
+  padding-top: 12px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.you-option {
+  display: flex;
+}
+
+.greater-icon {
+  width: 18px;
+  margin-left: 8px;
+}

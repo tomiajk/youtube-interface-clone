@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/video-preview.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/navigation-panel.css">
+    <link rel="stylesheet" href="styles/suggestions-tab.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="header">
+      <div class="left-section">
+        <button title="Menu" class="menu-button">
+          <img src="assets/logos/hamburger-menu.svg" alt="" class="hamburger-menu">
+        </button>
+        
+        <button title="Home" class="youtube-logo-button">
+          <img src="assets/logos/youtube-logo.svg" alt="" class="youtube-logo">
+        </button>
+
+      </div>
+      <div class="middle-section">
+        <input type="text" class="search-bar" placeholder="Search">
+        <button class="search-button" title="Search">
+          <img src="assets/logos/search-button.svg" alt="">
+        </button>
+        <button class="voice-search-button" title="Voice Search">
+          <img src="assets/logos/voice-search-icon.svg" alt="" class="voice-search-icon">
+        </button>
+      </div>
+      <div class="right-section">
+        <button title="Upload" class="upload-button">
+          <img src="assets/logos/upload.svg" alt="" class="menu-icon">
+        </button>
+
+        <button title="Notifications" class="notification-button">
+          <img src="assets/logos/notifications.svg" alt="" class="menu-icon">
+          <div class="not-number">4</div>
+        </button>
+        
+        <img src="assets/profile-pictures/myprofile.jpg" alt="" class="my-profile-pic">
+       
+      </div>
+    </div>
+    <div class="body-section">
+      <div class="side-panel">
+        <div class="side-bar-option current-option">
+          <img src="assets/logos/home.svg" alt="" class="side-bar-icon">
+          <p class="side-bar-text">Home</p>
+        </div>
+        <div class="side-bar-option">
+          <img src="assets/logos/shorts.svg" alt="" class="side-bar-icon ">
+          <p class="side-bar-text">Shorts</p>
+        </div>
+        <div class="side-bar-option">
+          <img src="assets/logos/subs.svg" alt="" class="side-bar-icon ">
+          <p class="side-bar-text">Subscriptions</p>
+        </div>
+
+        <div class="you-section">
+          <div class="side-bar-option you-option">
+            <p class="side-bar-text">
+              <p class="you-text">You</p>
+              <img src="assets/logos/greater.svg" alt="" class="greater-icon">
+            </p>
+          </div>
+          <div class="side-bar-option">
+            <img src="assets/logos/channel.svg" alt="" class="side-bar-icon ">
+            <p class="side-bar-text">Your channel</p>
+          </div>
+          <div class="side-bar-option">
+            <img src="assets/logos/history.svg" alt="" class="side-bar-icon ">
+            <p class="side-bar-text">History</p>
+          </div>
+        </div>
+        <div class="side-bar-option">
+          <img src="assets/logos/your-videos.svg" alt="" class="side-bar-icon ">
+          <p class="side-bar-text">Your videos</p>
+        </div>
+        <div class="side-bar-option">
+          <img src="assets/logos/watch-later.svg" alt="" class="side-bar-icon ">
+          <p class="side-bar-text">Watch later</p>
+        </div>
+        <div class="side-bar-option">
+          <img src="assets/logos/liked-videos.svg" alt="" class="side-bar-icon ">
+          <p class="side-bar-text">Liked videos</p>
+        </div>
+      </div>
+
+      <div class="main-body-section">
+
+        <div class="suggestion-tab">
+        </div>
+
+        <div class="video-grid js-video-grid">
+          
+        </div>
+      </div>
+    </div>
+
+    <script src="data/video-data.js"></script>
+    <script src="scripts/video-preview.js"></script>
+    <script src="scripts/sugestion-tab.js"></script>
+  </body>
+</html>
