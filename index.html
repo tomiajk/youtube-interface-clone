@@ -16,7 +16,8 @@
   </head>
 
   <body>
-    <div class="header">
+    <!-- ------------------------ Header Section ------------------------------------------- -->
+    <header class="header">
       <div class="left-section">
         <button title="Menu" class="menu-button">
           <img src="assets/logos/hamburger-menu.svg" alt="" class="hamburger-menu">
@@ -25,8 +26,8 @@
         <button title="Home" class="youtube-logo-button">
           <img src="assets/logos/youtube-logo.svg" alt="" class="youtube-logo">
         </button>
-
       </div>
+
       <div class="middle-section">
         <input type="text" class="search-bar" placeholder="Search">
         <button class="search-button">
@@ -38,12 +39,12 @@
           <div class="tooltip">Search with your voice</div>
         </button>
       </div>
+
       <div class="right-section">
         <button class="upload-button">
           <img src="assets/logos/upload.svg" alt="" class="menu-icon">
           <div class="tooltip">Create</div>
         </button>
-
         <button class="notification-button">
           <img src="assets/logos/notifications.svg" alt="" class="menu-icon">
           <div class="tooltip">Notifications</div>
@@ -55,10 +56,13 @@
           <div class="tooltip">My Profile</div>
         </div>
       </div>
-    </div>
+    </header>
+    <!-- ----------------------------End Of Header Section-------------------------------------- -->
+
     <div class="body-section">
-            
-      <div class="side-panel">
+
+      <!-- ------------------------ Side Panel Section --------------------------- -->
+      <nav class="side-panel">
         <div class="side-bar-option current-option">
           <img src="assets/logos/home.svg" alt="" class="side-bar-icon">
           <p class="side-bar-text">Home</p>
@@ -104,18 +108,18 @@
             <p class="side-bar-text">Liked videos</p>
           </div>
         </div>
-      </div>
-      <!-- End of Side Bar -->
+      </nav>
+      <!-- ---------------------------End of Side Panel-------------------------- -->
 
-      <div class="main-body-section">
+      <main class="main-body-section">
 
         <div class="suggestion-tab">
         </div>
 
-        <div class="video-grid js-video-grid">
+        <section class="video-grid js-video-grid">
           
-        </div>
-      </div>
+        </section>
+      </main>
     </div>
 
     <script src="data/video-data.js"></script>

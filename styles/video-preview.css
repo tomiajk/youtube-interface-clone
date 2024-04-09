@@ -26,10 +26,6 @@
   border-radius: 10px;
 }
 
-.video-info {
-  font-family: Roboto, Arial;
-}
-
 .profile-picture{
   width: 36px;
   height: 36px;
@@ -69,7 +65,6 @@
   font-size: 12px;
   font-weight: 500;
   padding: 3px;
-  font-family: Arial;
   z-index: 1;
 }
 
